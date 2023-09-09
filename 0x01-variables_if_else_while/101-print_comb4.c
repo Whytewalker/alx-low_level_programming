@@ -25,6 +25,7 @@ putchar(',');
 putchar(' ');
 }
 }
+}
 
 putchar('\n');
 
