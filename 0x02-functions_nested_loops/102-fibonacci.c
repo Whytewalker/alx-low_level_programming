@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * fibonacci - Prints the first 50 Fibonacci numbers, starting with 1 and 2,
+ * followed by a new line.
+ * @n: The number to be checked.
  *
  * Return: Always 0.
  */
@@ -22,18 +24,24 @@ int fibonacci(int n)
     return (curr);    
 }
 
+/**
+ * main - Prints the first 50 Fibonacci numbers, starting with 1 and 2,
+ * followed by a new line.
+ * @whyte: The number to be checked.
+ * Return: Always 0.
+ */
 int main(void)
 {
-    int whyte;
+int whyte;
 
-    for (whyte = 0; whyte < 50; ++whyte)
-    {
-        printf("%u", fibonacci(whyte));
-        if (whyte != 49)
-        {
-            printf(", ");
-        }
-    }
-    printf("\n");
-    return (0);
+for (whyte = 0; whyte < 50; ++whyte)
+{
+printf("%u", fibonacci(whyte));
+if (whyte != 49)
+{
+printf(", ");
+}
+}
+printf("\n");
+return (0);
 }

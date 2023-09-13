@@ -1,31 +1,32 @@
 #include <stdio.h>
 
 /**
- * main - find and print the sum of the even-valued terms
+ * main - Prints the first 50 Fibonacci numbers, starting with 1 and 2,
+ * followed by a new line.
  *
  * Return: Always 0.
  */
 int main(void)
 {
-    int i;
-    long int j, k, next;
+int i;
+long int j, k, next;
 
-    j = 1;
-    k = 2;
-    printf("%ld, ", j);
-    for (i = 1; i <= 48; i++)
-    {
-        if (i != 48)
-        {
-            printf("%ld, ", k);
-        }
-        else
-        {
-            printf("%ld\n", k);
-        }
-        next = j + k;
-        j = k;
-        k = next;
-    }
-    return (0);
+j = 1;
+k = 2;
+printf("%ld, ", j);
+for (i = 1; i <= 48; i++)
+{
+if (i != 48)
+{
+printf("%ld, ", k);
+}
+else
+{
+printf("%ld\n", k);
+}
+next = j + k;
+j = k;
+k = next;
+}
+return (0);
 }
