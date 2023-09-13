@@ -1,26 +1,31 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * main - find and print the sum of the even-valued terms
  *
- * Return: Always return 0.
+ * Return: Always 0.
  */
 int main(void)
 {
-long long first = 1, second = 2, next;
-long long sum = 0;
+int i;
+long int j, k, next;
 
-while (second <= 4000000)
+j = 1;
+k = 2;
+printf("%ld, ", j);
+for (i = 1; i <= 48; i++)
 {
-if (second % 2 == 0)
+if (i != 48)
 {
-sum += second;
+printf("%ld, ", k);
 }
-next = first + second;
-first = second;
-second = next;
+else
+{
+printf("%ld\n", k);
 }
-printf("%lld\n", sum);
-
+next = j + k;
+j = k;
+k = next;
+}
 return (0);
 }
