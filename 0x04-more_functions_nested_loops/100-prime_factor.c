@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * prime_factor - prints the largest prime factor
+ * main - prints the largest prime factor
  *
  * Return: Always 0.
  */
